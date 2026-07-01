@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HQ — Register to Continue</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header minimal">
+    <div class="container nav-row">
+      <div class="logo">HQ</div>
+      <nav class="nav">
+        <a href="home.html" class="nav-link">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-fade">
+    <section class="register-section">
+      <h2>Register to Continue</h2>
+      <p class="muted">Fill the details to access subject resources and secure your seat.</p>
+
+      <form id="regForm" class="form-card glass">
+        <input type="hidden" id="selectedClass" name="selectedClass">
+        <input type="hidden" id="selectedSubject" name="selectedSubject">
+
+        <label class="field">
+          <span>Full Name</span>
+          <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+        </label>
+
+        <label class="field">
+          <span>Contact Number</span>
+          <input type="tel" id="phone" name="phone" pattern="[0-9+ -]{7,20}" placeholder="+91 98765 43210" required>
+        </label>
+
+        <label class="field">
+          <span>Email Address</span>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary large ripple">Continue</button>
+        </div>
+
+        <div class="form-note" id="formNote" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
